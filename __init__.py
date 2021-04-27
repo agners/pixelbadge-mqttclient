@@ -179,7 +179,7 @@ if settings is None:
     settings = { "client_id": "badge" }
 if "mqtt_server" not in settings:
     uinterface.skippabletext("Specify MQTT host")
-    settings["mqtt_server"] = uinterface.text_input("abcdefghijklmnopqrstuvwxzy.012345679")
+    settings["mqtt_server"] = uinterface.text_input("abcdefghijklmnopqrstuvwxzy.0123456789")
     valuestore.save('mqttclient', 'settings', settings)
 	
 client_id = settings['client_id']
